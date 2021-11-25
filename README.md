@@ -1,3 +1,3 @@
-This is my profile
-Istitute of software engineer
+This is my profile .  
+Istitute of software engineer. 
 jeewantha madushan
