@@ -2,43 +2,39 @@ body > header {
     position: relative;
     height: 100px;
     background-color:black;
-    box-shadow: 5px 6px 10px 1px rgba(0, 0, 0, 0.062);
     z-index: 1;
     display: flex;
     justify-content: right;
-
 }
-
 header > nav {
     font-size: 36px;
     font-weight: 700;
     color: white;
 }
-
 header > nav > ul > li {
     display: inline;
     margin-left: 40px;
     margin-right: 25px;
     cursor: pointer;
 }
-
 header > nav > ul > li:hover {
     color: #18E5CD;
 }
-
+.PageView{
+    position: relative;
+    border: 2px solid red;
+    height: 100vh;
+}
 main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1) {
     position: absolute;
-    top: 162px;
-    left: 365px;
+    top: 175px;
+    left: 192px;
     margin: auto;
-
 }
-
 main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1)>img {
     position: relative;
-    height: 417px;
-
-    left: 180px;
+    height: 330px;
+    left: 181px;
     border-radius: 100%;
     border-width: 5px;
     border: 6px solid black;
@@ -59,10 +55,80 @@ main >section:nth-child(1) > div:nth-child(1)>div:nth-child(1)> h1{
 main >section:nth-child(1) > div:nth-child(1)>div:nth-child(1)>h1>cc{
     color: #18E5CD;
 }
-main>section:nth-child(2)>div{
+#secDP{
     position: absolute;
-    top: 150px;
-    left: 1700px;
+    top: 146px;
+    left: 1193px;
     margin: auto;
 }
+#SecDpID{
+    width: 640px;
+    height: 744px;
+}
+main>section>div>div>div>a{
+    all: initial;
+}
+.align{
+    display:flex ;
+    width: 480px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.icn{
+    width: 64px;
+}
+
+
+/*_________________________ ABOUT ME ____________________________________*/
+
+section:nth-child(2) > div{
+    position: absolute;
+}
+
+
+.about{
+    text-align: center;
+}
+#ABOUT{
+    position: relative;
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 130px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+section>div>h1>am{
+    color: #18E5CD;
+}
+#img3div{
+    position: absolute;
+    top: 160px;
+    left: 169px;
+    margin: auto;
+}
+#img3{
+    width: 830px;
+    height: 755px;
+}
+h1#ABOUT:before {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:  #18E5CD;
+    left: 525px;
+    top: 43%;
+    position: absolute;
+}
+h1#ABOUT:after {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:black;
+    right: 525px;
+    top: 43%;
+    position: absolute;
+}
+
 
