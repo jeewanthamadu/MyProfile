@@ -1,0 +1,68 @@
+body > header {
+    position: relative;
+    height: 100px;
+    background-color:black;
+    box-shadow: 5px 6px 10px 1px rgba(0, 0, 0, 0.062);
+    z-index: 1;
+    display: flex;
+    justify-content: right;
+
+}
+
+header > nav {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+header > nav > ul > li {
+    display: inline;
+    margin-left: 40px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+header > nav > ul > li:hover {
+    color: #18E5CD;
+}
+
+main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1) {
+    position: absolute;
+    top: 162px;
+    left: 365px;
+    margin: auto;
+
+}
+
+main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1)>img {
+    position: relative;
+    height: 417px;
+    /*right: 100px;*/
+    left: 180px;
+    border-radius: 100%;
+    border-width: 5px;
+    border: 6px solid black;
+}
+main >section:nth-child(1) > div:nth-child(1)>div:nth-child(1)> h3{
+    text-align: center;
+    margin: auto;
+    font-size: 95px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+main >section:nth-child(1) > div:nth-child(1)>div:nth-child(1)> h1{
+    text-align: center;
+    margin: auto;
+    font-size: 150px;
+    font-weight: bold;
+    font-family: 'Saira Condensed', sans-serif;
+}
+main >section:nth-child(1) > div:nth-child(1)>div:nth-child(1)>h1>cc{
+    color: #18E5CD;
+}
+main>section:nth-child(2)>div{
+    position: absolute;
+    top: 150px;
+    left: 1700px;
+    margin: auto;
+}
+
