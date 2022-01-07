@@ -37,7 +37,7 @@ main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1) {
 main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1)>img {
     position: relative;
     height: 417px;
-    /*right: 100px;*/
+
     left: 180px;
     border-radius: 100%;
     border-width: 5px;
