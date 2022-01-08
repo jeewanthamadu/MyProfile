@@ -27,7 +27,7 @@ header > nav > ul > li:hover {
 }
 main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1) {
     position: absolute;
-    top: 175px;
+    top: 59px;
     left: 192px;
     margin: auto;
 }
@@ -57,7 +57,7 @@ main >section:nth-child(1) > div:nth-child(1)>div:nth-child(1)>h1>cc{
 }
 #secDP{
     position: absolute;
-    top: 146px;
+    top: 17px;
     left: 1193px;
     margin: auto;
 }
@@ -85,10 +85,9 @@ section:nth-child(2) > div{
     position: absolute;
 }
 
-
-.about{
+/*.about{
     text-align: center;
-}
+}*/
 #ABOUT{
     position: relative;
     color: black;
@@ -130,5 +129,289 @@ h1#ABOUT:after {
     top: 43%;
     position: absolute;
 }
+section>div>h1>u>colourchange {
+    color: #18E5CD;
+}
+#changeUnderLine{
+    color: #18E5CD;
+}
+section>div>ul>li>h2{
+    font-size: 38px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+#aboutDetails{
+    position: relative;
+    top: 29px;
+    left:1129px;
+    margin: auto;
+}
+section>div:nth-child(3)>h1{
+    font-weight: bold;
+    font-size: 98px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+section>div>ul>li{
+    line-height: 20px;
+}
+
+/*___________________________CV DOWNLOAD BUTTON___________________________*/
+
+#btnDiv{
+    position: absolute;
+    top: 540px;
+    left:360px;
+    margin: auto;
+}
+#cvBtn{
+    border-radius: 68px;
+    width: 270px;
+    height: 64px;
+    background-color: #18E5CD;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+}
+#cvBtn>btnTxt{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+#cvBtn>btnTxt:hover{
+    color: white;
+    cursor: pointer;
+}
+/*___________________________CV DOWNLOAD BUTTON___________________________*/
 
 
+/*___________________________Educational___________________________*/
+
+
+
+
+#EDUCATION{
+    position: relative;
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 100px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+section>div>h1>EE{
+    color: #18E5CD;
+}
+h1#EDUCATION:before {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:  #18E5CD;
+    left: 310px;
+    top: 43%;
+    position: absolute;
+}
+h1#EDUCATION:after {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:black;
+    right: 300px;
+    top: 43%;
+    position: absolute;
+}
+
+table{
+    border: 2px solid red;
+}
+/*#setBox{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 2000px;
+    height: 500px;
+    background-color: red;
+}*/
+
+
+
+/*_______________1box________________*/
+.secBox{
+    position: absolute;
+    left: 11.32%;
+    right: 80%;
+    top: 15.2%;
+    bottom: 81.24%;
+    background: #212428;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 28px;
+}
+.secBox>h1{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.6700000000000017em 0;
+}
+.thirdBox{
+    position: absolute;
+    left: 11.28%;
+    right: 75.74%;
+    top: 20.14%;
+    bottom: 69.33%;
+    background: #d5dbe1;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 19px;
+}
+.thirdBox>h2{
+    color: black;
+  text-align: center;
+}
+.big{
+    position: absolute;
+    left: 0.65%;
+    right: 85.1%;
+    top: 30.51%;
+    border: 4px solid #000000;
+    transform: rotate(90deg);
+}
+.short{
+    position: absolute;
+    left: 7.65%;
+    right: 88.1%;
+    top: 22.51%;
+    border: 4px solid #000000;
+    transform: rotate(180deg);
+}
+.circle{
+    border: 3px;
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 128px;
+    top: 208px;
+    border-radius: 20px;
+    background: #18E5CD;
+}
+/*_______________1boxEnd________________*/
+
+
+/*_______________2box________________*/
+#secBox2{
+    position: absolute;
+    left: 11.32%;
+    right: 80%;
+    top: 42.2%;
+    bottom: 54.24%;
+    background: #212428;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 28px;
+}
+#secBox2>h1{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.6700000000000017em 0;
+}
+#thirdBox2{
+    position: absolute;
+    left: 11.28%;
+    right: 75.74%;
+    top: 47.14%;
+    bottom: 42.33%;
+    background: #d5dbe1;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 19px;
+}
+#thirdBox2>h2{
+    color: black;
+    text-align: center;
+}
+#big2{
+    position: absolute;
+    left: 0.65%;
+    right: 85.1%;
+    top: 50.51%;
+    border: 4px solid #000000;
+    transform: rotate(
+            90deg);
+}
+#short2{
+    position: absolute;
+    left: 7.65%;
+    right: 88.1%;
+    top: 49.51%;
+    border: 4px solid #000000;
+    transform: rotate(
+            180deg);
+}
+#circle2{
+    border: 3px;
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 129px;
+    top: 459px;
+    border-radius: 20px;
+    background: #18E5CD;
+}
+/*_______________2boxEnd________________*/
+
+/*_______________3box________________*/
+#secBox3{
+    position: absolute;
+    left: 11.32%;
+    right: 80%;
+    top: 70.2%;
+    bottom: 26.24%;
+    background: #212428;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 28px;
+}
+#secBox3>h1{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.6700000000000017em 0;
+}
+#thirdBox3{
+    position: absolute;
+    left: 11.28%;
+    right: 75.74%;
+    top: 75.14%;
+    bottom: 14.33%;
+    background: #d5dbe1;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 19px;
+}
+#thirdBox3>h2{
+    color: black;
+    text-align: center;
+}
+#big3{
+    position: absolute;
+    left: 0.65%;
+    right: 85.1%;
+    top: 78.51%;
+    border: 4px solid #000000;
+    transform: rotate(
+            90deg);
+}
+#short3{
+    position: absolute;
+    left: 7.65%;
+    right: 88.1%;
+    top: 77.51%;
+    border: 4px solid #000000;
+    transform: rotate(
+            180deg);
+}
+#circle3{
+    border: 3px;
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 129px;
+    top: 721px;
+    border-radius: 20px;
+    background: #18E5CD;
+}
+/*_______________3boxEnd________________*/
