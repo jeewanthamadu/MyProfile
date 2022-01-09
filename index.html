@@ -248,24 +248,26 @@
 
     <div id="chatBox">
         <form action="" method="get" class="form-example">
-            <div class="form-example">
-                <label for="name">Full Name </label><br>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <div class="form-example">
-                <label for="email">E-mail </label><br>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="form-example">
-                <label for="Subject">Subject </label><br>
-                <input type="text" name="subject" id="subject" required>
+            <div>
+                <label class="lbl" for="name">Full Name </label><br>
+                <input class="inp" type="text" name="name" id="name" required>
+            </div><br>
+            <div>
+                <label class="lbl" for="email">E-mail </label><br>
+                <input class="inp" type="email" name="email" id="email" required>
+            </div><br>
+            <div >
+                <label class="lbl" for="Subject">Subject </label><br>
+                <input class="inp"  type="text" name="subject" id="subject" required>
              </div>
-            <div class="form-example">
-                <label for="email">Massage </label><br>
-                <input type="email" name="email" id="email" required>
+            <br>
+            <div>
+                <label class="lbl" >Massage </label><br>
+                <textarea class="inp2" id="message" rows="7">
+                </textarea>
             </div>
-            <div class="form-example"><br>
-                <input type="submit" value="SEND">
+            <div id="contactBtnDiv" ><br>
+                <input id="contactBtn" type="submit" value="SEND" >
             </div>
         </form>
     </div>
