@@ -22,7 +22,7 @@ header > nav > ul > li:hover {
 }
 .PageView{
     position: relative;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     height: 100vh;
 }
 main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1) {
@@ -84,10 +84,6 @@ main>section>div>div>div>a{
 section:nth-child(2) > div{
     position: absolute;
 }
-
-/*.about{
-    text-align: center;
-}*/
 #ABOUT{
     position: relative;
     color: black;
@@ -140,9 +136,10 @@ section>div>ul>li>h2{
     font-family: 'Saira Condensed', sans-serif;
 }
 #aboutDetails{
-    position: relative;
+    position: absolute;
     top: 29px;
-    left:1129px;
+    left: 1124px;
+    top: 173px;
     margin: auto;
 }
 section>div:nth-child(3)>h1{
@@ -158,8 +155,8 @@ section>div>ul>li{
 
 #btnDiv{
     position: absolute;
-    top: 540px;
-    left:360px;
+    top: 605px;
+    left: 354px;
     margin: auto;
 }
 #cvBtn{
@@ -234,8 +231,8 @@ h1#EDUCATION:after {
 /*_______________1box________________*/
 #secBox{
     position: absolute;
-    left: 11.32%;
-    right: 80%;
+    left: 21.32%;
+    right: 69%;
     top: 15.2%;
     bottom: 81.24%;
     background: #212428;
@@ -250,8 +247,8 @@ h1#EDUCATION:after {
 }
 #thirdBox{
     position: absolute;
-    left: 11.28%;
-    right: 75.74%;
+    left: 21.28%;
+    right: 63.74%;
     top: 20.14%;
     bottom: 69.33%;
     background: #d5dbe1;
@@ -264,16 +261,16 @@ h1#EDUCATION:after {
 }
 #big{
     position: absolute;
-    left: 0.65%;
-    right: 85.1%;
+    left: 9.65%;
+    right: 74.1%;
     top: 30.51%;
     border: 4px solid #000000;
     transform: rotate(90deg);
 }
 #short{
     position: absolute;
-    left: 7.65%;
-    right: 88.1%;
+    left: 17.65%;
+    right: 78.1%;
     top: 22.51%;
     border: 4px solid #000000;
     transform: rotate(180deg);
@@ -283,8 +280,8 @@ h1#EDUCATION:after {
     position: absolute;
     width: 36px;
     height: 33px;
-    left: 128px;
-    top: 208px;
+    left: 319px;
+    top: 205px;
     border-radius: 20px;
     background: #18E5CD;
 }
@@ -294,8 +291,8 @@ h1#EDUCATION:after {
 /*_______________2box________________*/
 #secBox2{
     position: absolute;
-    left: 11.32%;
-    right: 80%;
+    left: 21.32%;
+    right: 69%;
     top: 42.2%;
     bottom: 54.24%;
     background: #212428;
@@ -310,8 +307,8 @@ h1#EDUCATION:after {
 }
 #thirdBox2{
     position: absolute;
-    left: 11.28%;
-    right: 75.74%;
+    left: 21.28%;
+    right: 63.74%;
     top: 47.14%;
     bottom: 42.33%;
     background: #d5dbe1;
@@ -324,8 +321,8 @@ h1#EDUCATION:after {
 }
 #big2{
     position: absolute;
-    left: 0.65%;
-    right: 85.1%;
+    left: 13.65%;
+    right: 78.1%;
     top: 50.51%;
     border: 4px solid #000000;
     transform: rotate(
@@ -333,8 +330,8 @@ h1#EDUCATION:after {
 }
 #short2{
     position: absolute;
-    left: 7.65%;
-    right: 88.1%;
+    left: 17.65%;
+    right: 78.1%;
     top: 49.51%;
     border: 4px solid #000000;
     transform: rotate(
@@ -345,7 +342,7 @@ h1#EDUCATION:after {
     position: absolute;
     width: 36px;
     height: 33px;
-    left: 129px;
+    left: 321px;
     top: 459px;
     border-radius: 20px;
     background: #18E5CD;
@@ -355,8 +352,8 @@ h1#EDUCATION:after {
 /*_______________3box________________*/
 #secBox3{
     position: absolute;
-    left: 11.32%;
-    right: 80%;
+    left: 21.32%;
+    right: 69%;
     top: 70.2%;
     bottom: 26.24%;
     background: #212428;
@@ -371,8 +368,8 @@ h1#EDUCATION:after {
 }
 #thirdBox3{
     position: absolute;
-    left: 11.28%;
-    right: 75.74%;
+    left: 21.28%;
+    right: 63.74%;
     top: 75.14%;
     bottom: 14.33%;
     background: #d5dbe1;
@@ -385,8 +382,8 @@ h1#EDUCATION:after {
 }
 #big3{
     position: absolute;
-    left: 0.65%;
-    right: 85.1%;
+    left: 7.65%;
+    right: 72.1%;
     top: 78.51%;
     border: 4px solid #000000;
     transform: rotate(
@@ -394,8 +391,8 @@ h1#EDUCATION:after {
 }
 #short3{
     position: absolute;
-    left: 7.65%;
-    right: 88.1%;
+    left: 17.65%;
+    right: 78.1%;
     top: 77.51%;
     border: 4px solid #000000;
     transform: rotate(
@@ -406,7 +403,7 @@ h1#EDUCATION:after {
     position: absolute;
     width: 36px;
     height: 33px;
-    left: 129px;
+    left: 320px;
     top: 721px;
     border-radius: 20px;
     background: #18E5CD;
@@ -566,8 +563,8 @@ h1#EDUCATION:after {
 }
 #big6{
     position: absolute;
-    left: 61.65%;
-    right: 26.1%;
+    left: 58.65%;
+    right: 23.1%;
     top: 78.51%;
     border: 4px solid #000000;
     transform: rotate(
@@ -629,6 +626,148 @@ h1#projects:after {
     position: absolute;
 }
 
+#activity_container {
+    position: relative;
+    top: 140px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1572px;
+}
+/*___________________MoreProjects____*/
+#activity_container2 {
+    position: relative;
+    top: 42px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1572px;
+}
+#activity_container3 {
+    position: relative;
+    top: 42px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1572px;
+}
+#activity_img4 {
+    background-image: url(../images/2.png);
+}
+#activity_img5 {
+    background-image: url(../images/2.png);
+}
+#activity_img6 {
+    background-image: url(../images/2.png);
+}#activity_img7 {
+     background-image: url(../images/2.png);
+ }
+#activity_img8 {
+    background-image: url(../images/2.png);
+}
+#activity_img9 {
+    background-image: url(../images/2.png);
+}
+
+/*___________________EndMoreProjects____*/
+
+.activity_card_div {
+    position: relative;
+    width: 430px;
+    height: 423px;
+    background: #212428;
+    box-shadow: 0px 0px 10px 10px rgb(24 229 205);
+    border-radius: 86px;
+}
+.activity_card_div:hover {
+    transform: scale(1.1);
+}
+.activity_card_div:hover>.activity_img {
+    opacity: 20%;
+}
+.activity_card_div:hover>.content {
+    opacity: 100%;
+    transform: scale(1.1);
+}
+.activity_card_div > div:nth-child(1) {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 407px;
+    height: 403px;
+    border-radius: 75px;
+}
+#activity_img1 {
+    background-image: url(../images/1.png);
+}
+#activity_img2 {
+    background-image: url(../images/1.png);
+}
+#activity_img3 {
+    background-image: url(../images/1.png);
+}
+.content{
+    transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
+    opacity:0;
+    position: absolute;
+    top: 39%;
+    right: -5px;
+    left: 100px;
+    margin: auto;
+    font-size: 35px;
+    color: white ;
+    font-weight: bold;
+    font-family: 'Saira Condensed', sans-serif;
+}
+#activity_btn{
+    position: absolute;
+    top: 85%;
+    right: 111px;
+    left: 750px;
+    margin: auto;
+}
+.activity_img {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.see_more_btn {
+    width: 443px;
+    height: 72px;
+    border: 5px solid #2ae7d0;
+    background-color: #1ee5ce;
+    border-radius: 68px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 5px rgb(0 0 0 / 25%);
+    color: black;
+    line-height: 34px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.see_more_btn:hover {
+    color: white;
+}
+
+
+
 /*_________________________Skills_____________________________________*/
 
 #skills{
@@ -674,7 +813,7 @@ h1#skills:after {
     position: absolute;
     left: 90px;
     right: 112px;
-    bottom: 235px;
+    bottom: 384px;
     margin: auto;
     overflow: hidden
 
@@ -786,9 +925,7 @@ h1#contact:after {
 }
 
 
-/*main>section>div>div>div>a{
-    all: initial;
-}*/
+
 .alignContactIcn{
     position: absolute;
     display: flex;
@@ -802,7 +939,6 @@ h1#contact:after {
 }
 .contactIcn{
     width: 45px;
-
 }
 #before {
     width: 7px;
@@ -821,6 +957,7 @@ h1#contact:after {
     position: absolute;
     background-color: black;
 }
+
 #chatBox{
     position: absolute;
     display: flex;
@@ -852,7 +989,6 @@ h1#contact:after {
     border-radius: 20px;
 }
 #contactBtnDiv{
-
     position: absolute;
     margin: auto;
     left: 490px;
@@ -874,4 +1010,61 @@ h1#contact:after {
 #contactBtn:hover{
     color: white;
     cursor: pointer;
+}
+
+
+
+
+
+/*_________________________Footer_____________________________________*/
+
+
+#footer {
+    height: 300px;
+}
+
+.footer-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    bottom: -26px;
+}
+
+#pic {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #18e5cd;
+    border-radius: 100%;
+    background-image: url(../images/dp.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+#footer>hr{
+    height: 4px;
+    background-color: black;
+}
+#footer_p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: black;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+#footer_p > a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer_p > a:visited {
+    text-decoration: none;
+    color: black;
 }
