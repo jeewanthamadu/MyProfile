@@ -696,3 +696,77 @@ h1#contact:after {
     top: 43%;
     position: absolute;
 }
+#contactDetail{
+    position: absolute;
+    width: 822px;
+    height: 305px;
+    top: -298px;
+    left: 60px;
+    right: 869px;
+    bottom: 0px;
+    margin: auto;
+}
+.contactHead{
+    text-align: center;
+    margin: auto;
+    font-size: 66px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+#contactDetail>img{
+    position: relative;
+    height: 435px;
+    left: 150px;
+}
+.contactFooter{
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+
+/*main>section>div>div>div>a{
+    all: initial;
+}*/
+.alignContactIcn{
+    position: absolute;
+    display: flex;
+    width: max-content;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    bottom: 236px;
+    left: 55px;
+}
+.contactIcn{
+    width: 45px;
+
+}
+#before {
+    width: 7px;
+    height: 142px;
+    left: 18px;
+    top: 263px;
+    position: absolute;
+    background-color: black;
+}
+#after {
+    width: 7px;
+    height: 147px;
+    bottom: 280px;
+    top: -210px;
+    left: 18px;
+    position: absolute;
+    background-color: black;
+}
+#chatBox{
+    position: absolute;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    bottom: 304px;
+    left: 1281px;
+}
