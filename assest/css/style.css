@@ -17,7 +17,11 @@ header > nav > ul > li {
     margin-right: 25px;
     cursor: pointer;
 }
-header > nav > ul > li:hover {
+header > nav > ul > li>a {
+    color: white;
+    text-decoration: black;
+}
+header > nav > ul > li>a:hover {
     color: #18E5CD;
 }
 .PageView{
