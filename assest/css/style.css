@@ -218,10 +218,7 @@ h1#EDUCATION:after {
     position: absolute;
 }
 
-table{
-    border: 2px solid red;
-}
-/*#setBox{
+#setBox{
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -230,12 +227,12 @@ table{
     width: 2000px;
     height: 500px;
     background-color: red;
-}*/
+}
 
 
 
 /*_______________1box________________*/
-.secBox{
+#secBox{
     position: absolute;
     left: 11.32%;
     right: 80%;
@@ -245,13 +242,13 @@ table{
     box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
     border-radius: 28px;
 }
-.secBox>h1{
+#secBox>h1{
     color: white;
     font-size: 1em;
     text-align: center;
     margin: 0.6700000000000017em 0;
 }
-.thirdBox{
+#thirdBox{
     position: absolute;
     left: 11.28%;
     right: 75.74%;
@@ -261,11 +258,11 @@ table{
     box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
     border-radius: 19px;
 }
-.thirdBox>h2{
+#thirdBox>h2{
     color: black;
   text-align: center;
 }
-.big{
+#big{
     position: absolute;
     left: 0.65%;
     right: 85.1%;
@@ -273,7 +270,7 @@ table{
     border: 4px solid #000000;
     transform: rotate(90deg);
 }
-.short{
+#short{
     position: absolute;
     left: 7.65%;
     right: 88.1%;
@@ -281,7 +278,7 @@ table{
     border: 4px solid #000000;
     transform: rotate(180deg);
 }
-.circle{
+#circle{
     border: 3px;
     position: absolute;
     width: 36px;
@@ -415,3 +412,287 @@ table{
     background: #18E5CD;
 }
 /*_______________3boxEnd________________*/
+
+/*_______________4box________________*/
+#secBox4{
+    position: absolute;
+    left: 71.32%;
+    right: 20%;
+    top: 15.2%;
+    bottom: 81.24%;
+    background: #212428;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 28px;
+}
+#secBox4>h1{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.6700000000000017em 0;
+}
+#thirdBox4{
+    position: absolute;
+    left: 71.28%;
+    right: 15.74%;
+    top: 20.14%;
+    bottom: 69.33%;
+    background: #d5dbe1;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 19px;
+}
+#thirdBox4>h2{
+    color: black;
+    text-align: center;
+}
+#big4{
+    position: absolute;
+    left: 60.65%;
+    right: 25.1%;
+    top: 30.51%;
+    border: 4px solid #000000;
+    transform: rotate(90deg);
+}
+#short4{
+    position: absolute;
+    left: 68.65%;
+    right: 28.1%;
+    top: 22.51%;
+    border: 4px solid #000000;
+    transform: rotate(180deg);
+}
+#circle4 {
+    border: 3px;
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 1269px;
+    top: 208px;
+    border-radius: 20px;
+    background: #18E5CD;
+}
+/*_______________4boxEnd________________*/
+
+/*_______________5box________________*/
+#secBox5{
+    position: absolute;
+    left: 71.32%;
+    right: 20%;
+    top: 42.2%;
+    bottom: 54.24%;
+    background: #212428;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 28px;
+}
+#secBox5>h1{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.6700000000000017em 0;
+}
+#thirdBox5{
+    position: absolute;
+    left: 71.28%;
+    right: 15.74%;
+    top: 47.14%;
+    bottom: 42.33%;
+    background: #d5dbe1;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 19px;
+}
+#thirdBox5>h2{
+    color: black;
+    text-align: center;
+}
+#big5{
+    position: absolute;
+    left: 58.65%;
+    right: 23.1%;
+    top: 50.51%;
+    border: 4px solid #000000;
+    transform: rotate(
+            90deg);
+}
+#short5{
+    position: absolute;
+    left: 67.65%;
+    right: 28.1%;
+    top: 49.51%;
+    border: 4px solid #000000;
+    transform: rotate(
+            180deg);
+}
+#circle5{
+    border: 3px;
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 1267px;
+    top: 459px;
+    border-radius: 20px;
+    background: #18E5CD;
+}
+/*_______________5boxEnd________________*/
+
+/*_______________6box________________*/
+#secBox6{
+    position: absolute;
+    left: 71.32%;
+    right: 20%;
+    top: 70.2%;
+    bottom: 26.24%;
+    background: #212428;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 28px;
+}
+#secBox6>h1{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.6700000000000017em 0;
+}
+#thirdBox6{
+    position: absolute;
+    left: 71.28%;
+    right: 15.74%;
+    top: 75.14%;
+    bottom: 14.33%;
+    background: #d5dbe1;
+    box-shadow: 0px 0px 20px 5px rgb(52 51 51 / 50%);
+    border-radius: 19px;
+}
+#thirdBox6>h2{
+    color: black;
+    text-align: center;
+}
+#big6{
+    position: absolute;
+    left: 61.65%;
+    right: 26.1%;
+    top: 78.51%;
+    border: 4px solid #000000;
+    transform: rotate(
+            90deg);
+}
+#short6{
+    position: absolute;
+    left: 67.65%;
+    right: 28.1%;
+    top: 77.51%;
+    border: 4px solid #000000;
+    transform: rotate(
+            180deg);
+}
+#circle6{
+    border: 3px;
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 1269px;
+    top: 721px;
+    border-radius: 20px;
+    background: #18E5CD;
+}
+/*_______________6boxEnd________________*/
+
+
+/*_________________________Projects_____________________________________*/
+
+#projects{
+    position: relative;
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 100px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+section>div>h1>mp{
+    color: #18E5CD;
+}
+h1#projects:before {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:  #18E5CD;
+    left: 545px;
+    top: 43%;
+    position: absolute;
+}
+h1#projects:after {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:black;
+    right: 545px;
+    top: 43%;
+    position: absolute;
+}
+
+/*_________________________Skills_____________________________________*/
+
+#skills{
+    position: relative;
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 100px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+section>div>h1>mskill{
+    color: #18E5CD;
+}
+h1#skills:before {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:  #18E5CD;
+    left: 590px;
+    top: 43%;
+    position: absolute;
+}
+h1#skills:after {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:black;
+    right: 590px;
+    top: 43%;
+    position: absolute;
+}
+
+/*_________________________Contact_____________________________________*/
+
+#contact{
+    position: relative;
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 100px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+section>div>h1>mc{
+    color: #18E5CD;
+}
+h1#contact:before {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:  #18E5CD;
+    left: 590px;
+    top: 43%;
+    position: absolute;
+}
+h1#contact:after {
+    content: "";
+    display: block;
+    width: 122px;
+    height: 18px;
+    background:black;
+    right: 590px;
+    top: 43%;
+    position: absolute;
+}
