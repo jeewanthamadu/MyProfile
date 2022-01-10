@@ -26,7 +26,6 @@ header > nav > ul > li>a:hover {
 }
 .PageView{
     position: relative;
-    /*border: 2px solid red;*/
     height: 100vh;
 }
 main > section:nth-child(1) > div:nth-child(1)>div:nth-child(1) {
@@ -737,17 +736,18 @@ h1#projects:after {
     font-weight: bold;
     font-family: 'Saira Condensed', sans-serif;
 }
+
+.activity_img {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
 #activity_btn{
     position: absolute;
     top: 85%;
     right: 111px;
     left: 750px;
     margin: auto;
-}
-.activity_img {
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
 }
 .see_more_btn {
     width: 443px;
@@ -769,6 +769,7 @@ h1#projects:after {
 .see_more_btn:hover {
     color: white;
 }
+
 
 
 
@@ -820,7 +821,6 @@ h1#skills:after {
     bottom: 384px;
     margin: auto;
     overflow: hidden
-
 }
 #iconSlide {
     display: flex;
@@ -1072,3 +1072,29 @@ h1#contact:after {
     text-decoration: none;
     color: black;
 }
+
+
+
+/*_________responsive part____________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
