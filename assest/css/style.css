@@ -70,6 +70,7 @@ main >section:nth-child(1) > div:nth-child(1)>div:nth-child(1)>h1>cc{
 }
 main>section>div>div>div>a{
     all: initial;
+    cursor: pointer;
 }
 .align{
     display:flex ;
@@ -705,22 +706,22 @@ h1#projects:after {
 }
 .activity_card_div > div:nth-child(1) {
     position: relative;
-    top: 10px;
+    top: 18px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 407px;
-    height: 403px;
+    width: 405px;
+    height: 381px;
     border-radius: 75px;
 }
 #activity_img1 {
     background-image: url(../images/1.png);
 }
 #activity_img2 {
-    background-image: url(../images/1.png);
+    background-image: url(../images/hbnet.png);
 }
 #activity_img3 {
-    background-image: url(../images/1.png);
+    background-image: url(../images/pos.PNG);
 }
 .content{
     transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
@@ -827,10 +828,10 @@ h1#skills:after {
     justify-content: space-evenly;
     align-items: center;
     flex-shrink: 0;
-    flex-basis: 3475px;
+    flex-basis: 2387px;
     animation: scroll2 10s linear alternate;
     animation-iteration-count: infinite;
-    animation-delay: 0.1ms;
+    animation-delay: 1s;
 }
 @keyframes scroll2 {
     from {
@@ -861,9 +862,9 @@ h1#skills:after {
     align-items: center;
     flex-shrink: 0;
     flex-basis: 3475px;
-    animation: scroll 8s linear alternate;
+    animation: scroll 5s linear alternate;
     animation-iteration-count: infinite;
-    animation-delay: 0.1ms;
+    animation-delay: 1s;
 }
 
 @keyframes scroll {
@@ -932,6 +933,7 @@ h1#contact:after {
     top: 43%;
     position: absolute;
 }
+
 #contactDetail{
     position: absolute;
     width: 822px;
@@ -1250,6 +1252,25 @@ h1#contact:after {
     #img3{
         width: 342px;
         height: 293px;
+    }
+
+    #btnDiv {
+        position: absolute;
+        top: 316px;
+        left: 115px;
+        margin: auto;
+    }
+    #cvBtn {
+        border-radius: 68px;
+        width: 146px;
+        height: 33px;
+        background-color: #18E5CD;
+        box-shadow: 0px 4px 10px 5px rgb(0 0 0 / 25%);
+    }
+    #cvBtn>btnTxt {
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Saira Condensed', sans-serif;
     }
 
 
@@ -1597,6 +1618,10 @@ h1#contact:after {
         display: none;
     }
 
+    h1#skills:before {
+       display: none;
+    }
+
     #mainSlider{
         height: 533px;
         display: flex;
@@ -1669,6 +1694,9 @@ h1#contact:after {
         font-family: 'Saira Condensed', sans-serif;
     }
     .contactHead{
+        display: none;
+    }
+    #contactDetail{
         display: none;
     }
     #contactDetail>img{
