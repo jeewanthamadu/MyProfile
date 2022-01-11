@@ -41,8 +41,8 @@
 
 
  **<h1>Links : </h1>**
-- Website : [helithapraveenonline](https://helithapraveenonline.000webhostapp.com/)
-- GitHub : [helithasri.github.io](https://github.com/jeewanthamadu/MyProfile)
+- Website : 
+- GitHub : [Click Here](https://github.com/jeewanthamadu/MyProfile)
 - Site Map : [Click Here](https://www.gloomaps.com/kbnEmoCXoG)
 - Wireframe : [Click Here](https://wireframe.cc/GQPEMv)
 - Mockup : [Click Here](https://www.figma.com/proto/EycC22uov4pPJUePaJPwFe/Untitled?node-id=1%3A2&starting-point-node-id=1%3A2)
