@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Jeewantha madushan</title>
+<meta name="keywords" content="jeewantha,madushan,sofware engineer">
+<meta name="description" content="This is second assignment in css">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="assests/font/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assests/css/normalize.css">
+<style>
+
+    section {
+        height: 100vh;
+        background: black;
+    }
+    section > div{
+        position: absolute;
+        width: 1000px;
+        height: 600px;
+        border: 10px solid rgb(0, 132, 255);
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+    }
+    section > div > div{
+        width: 5000px;
+        height: 600px;
+
+        display: flex;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        animation-name: scroll;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 1s;
+    }
+
+    section > div > div > div{
+        width: 1000px;
+        height: 600px;
+    }
+
+    #div1{
+        background-image: url(../Assignment_10/assests/images/02.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+    }
+
+    #div2{
+        background-image: url(../Assignment_10/assests/images/ijse.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    #div3{
+        background-image: url(../Assignment_10/assests/images/01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+
+
+    @keyframes scroll{
+        0%{
+            margin-left: 0px;
+        }
+        25%{
+            margin-left: -1000px;
+        }
+        50%{
+            margin-left: -2000px;
+        }
+        75%{
+            margin-left: -3000px;
+        }
+        100%{
+            margin-left: -4000px;
+        }
+    }
+
+</style>
+
+<body>
+<section>
+    <div>
+        <div>
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
