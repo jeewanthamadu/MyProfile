@@ -63,5 +63,462 @@
 
 </header>
 
+<main class="container-fluid">
+
+    <section id="customerId">
+        <div class="rounded-3 p-3" style="background-color: #c8d6e5; margin-top: 30px;">
+            <div> <!--<img src="assest/images/customer.png" alt="Logo" width="184.3125" height="48.1875">-->
+                <h1 class="text-center mb-3"><i class="bi bi-box-seam m-2"></i>CUSTOMER MANAGE</h1>
+            </div>
+
+            <div class="row g-3 align-items-center pb-3 justify-content-between">
+                <div class="col-12 col-md-6 col-xl-5">
+                    <div class="input-group mb-3" style="height: 10px;">
+                        <input type="text" class="form-control" placeholder="Search Item"
+                               aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-dark" type="button" id="button-addon2"><i
+                                class="bi bi-search m-2"></i>Search</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                    <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+                            data-bs-target="#addItem"><i class="bi bi-bag-plus m-2"></i>ADD NEW CUSTOMER</button>
+                    <button type="button" class="btn btn-danger mt-2"><i class="bi bi-backspace m-2"></i>Clear</button>
+                </div>
+            </div>
+            <hr>
+
+            <!--    ______________Add new_____________________-->
+            <div class="modal fade" id="addItem" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-black text-white ">
+                            <h5 class="modal-title"  id="exampleModalToggleLabel"><i class="bi bi-bag-plus m-2"></i>ADD NEW CUSTOMER
+                            </h5>
+
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="itemCode" class="form-label">Customer ID</label>
+                                    <input type="text" class="form-control" id="itemCode">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="itemName" class="form-label">Customer Name</label>
+                                    <input type="text" class="form-control" id="itemName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="itemQty" class="form-label">Customer Age</label>
+                                    <input type="text" class="form-control" id="itemQty">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="itemPrice" class="form-label">Customer TELE Number</label>
+                                    <input type="text" class="form-control" id="itemPrice">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary mt-2">ADD Customer</button>
+                            <button type="button" class="btn btn-danger mt-2" data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="" style="background-color: black;">
+                            <tr class="text-white" >
+                                <th >Customer ID</th>
+                                <th>Customer Name</th>
+                                <th>Customer Age</th>
+                                <th>Customer Number</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>C001</th>
+                                <td>jeewantha</td>
+                                <td>22</td>
+                                <td>0775588963</td>
+
+                            </tr>
+                            <tr>
+                                <th>C002</th>
+                                <td>madushan</td>
+                                <td>21</td>
+                                <td>077987452</td>
+
+                            </tr><tr>
+                                <th>C003</th>
+                                <td>kasun</td>
+                                <td>24</td>
+                                <td>0768596569</td>
+                            </tr>
+                            <tr>
+                                <th>C004</th>
+                                <td>yasiru</td>
+                                <td>25</td>
+                                <td>0775588963</td>
+
+                            </tr>
+                            <tr>
+                                <th>C005</th>
+                                <td>madu</td>
+                                <td>28</td>
+                                <td>077987452</td>
+
+                            </tr><tr>
+                                <th>C006</th>
+                                <td>sumudu</td>
+                                <td>29</td>
+                                <td>0768456569</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </section>
+    <section id="itemId">
+        <div class="rounded-3 p-3" style="background-color: #c8d6e5; margin-top: 30px;">
+            <h1 class="text-center mb-3"><i class="bi bi-box-seam m-2"></i>ITEM MANAGE</h1>
+
+            <div class="row g-3 align-items-center pb-3 justify-content-between">
+                <div class="col-12 col-md-6 col-xl-5">
+                    <div class="input-group mb-3" style="height: 10px;">
+                        <input type="text" class="form-control" placeholder="Search Item"
+                               aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-dark" type="button" id="button-addon2"><i
+                                class="bi bi-search m-2"></i>Search</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                    <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+                            data-bs-target="#addItem"><i class="bi bi-bag-plus m-2"></i>ADD Item</button>
+                    <button type="button" class="btn btn-danger mt-2"><i class="bi bi-backspace m-2"></i>Clear</button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="modal fade" id="addItem" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-black text-white ">
+                            <h5 class="modal-title"  id="exampleModalToggleLabel"><i class="bi bi-bag-plus m-2"></i>ADD ITEM
+                            </h5>
+                            <!--  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="itemCode" class="form-label">Item ID</label>
+                                    <input type="text" class="form-control" id="itemCode">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="itemName" class="form-label"> Name</label>
+                                    <input type="text" class="form-control" id="itemName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="itemQty" class="form-label"> Qty</label>
+                                    <input type="text" class="form-control" id="itemQty">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="itemPrice" class="form-label">Price</label>
+                                    <input type="text" class="form-control" id="itemPrice">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary mt-2">ADD ITEM</button>
+                            <button type="button" class="btn btn-danger mt-2" data-bs-dismiss="modal">Cancle</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section>
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="" style="background-color: black;">
+                            <tr class="text-white" >
+                                <th >Item ID</th>
+                                <th> Name</th>
+                                <th>Price</th>
+                                <th>Qty</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>I001</th>
+                                <td>Apple i7</td>
+                                <td>50,000</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>I002</th>
+                                <td>Apple i7+</td>
+                                <td>70,000</td>
+                                <td>1</td>
+                            </tr><tr>
+                                <th>I001</th>
+                                <td>Apple Xs</td>
+                                <td>115,000</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>I001</th>
+                                <td>Apple i7</td>
+                                <td>50,000</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>I002</th>
+                                <td>Apple i7+</td>
+                                <td>70,000</td>
+                                <td>1</td>
+                            </tr><tr>
+                                <th>I001</th>
+                                <td>Apple Xs</td>
+                                <td>115,000</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>I001</th>
+                                <td>Apple i7</td>
+                                <td>50,000</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>I002</th>
+                                <td>Apple i7+</td>
+                                <td>70,000</td>
+                                <td>1</td>
+                            </tr><tr>
+                                <th>I001</th>
+                                <td>Apple Xs</td>
+                                <td>115,000</td>
+                                <td>1</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+    <section id="orderId">
+        <div class="rounded-3 p-3" style="background-color: #c8d6e5; margin-top: 30px;">
+            <h1 class="text-center mb-3"><i class="bi bi-box-seam m-2"></i>ORDER MANAGE</h1>
+            <div class="row align-items-center">
+                <div class="col-4 col-lg-4 col-md-4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header justify-content-center bg-info">
+                                <h4 class="modal-title fw-bold">Invoice Details</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="oId" class="form-label fw-bold">Order ID:</label>
+                                        <input type="text" class="form-control" id="oId" placeholder="O001">
+                                    </div>
+                                    <div class="col">
+                                        <label for="iDate" class="form-label fw-bold">Date:</label>
+                                        <input type="date" class="form-control" id="iDate">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <label for="idCmb" class="form-label fw-bold">Customer ID:</label>
+                                        <select class="form-select" id="idCmb">
+                                            <option selected>C001</option>
+                                            <option value="1">C001</option>
+                                            <option value="2">C002</option>
+                                            <option value="3">C003</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="cusName" class="form-label fw-bold">Customer Name:</label>
+                                        <input type="text" class="form-control" id="cusName" placeholder="Sri">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-3">
+                                    <div class="col">
+                                        <label for="salary" class="form-label fw-bold">Salary:</label>
+                                        <input type="number" class="form-control" id="salary" placeholder="100000">
+                                    </div>
+                                    <div class="col">
+                                        <label for="address" class="form-label fw-bold">Address:</label>
+                                        <input type="text" class="form-control" id="address" placeholder="Kandy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--___________End invoice_________________________-->
+
+
+                <!--___________Item_________________________-->
+                <div class="col-4 col-lg-4 col-md-4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header justify-content-center bg-info">
+                                <h4 class="modal-title fw-bold">Item Select</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="idCmb" class="form-label fw-bold">Item:</label>
+                                        <select class="form-select" id="idCmb">
+                                            <option selected>I001</option>
+                                            <option value="1">I001</option>
+                                            <option value="2">I002</option>
+                                            <option value="3">I003</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="itemName" class="form-label fw-bold">Item Name:</label>
+                                        <input type="text" class="form-control" id="itemName" placeholder="Mouse">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+
+                                    <div class="col">
+                                        <label for="qtyOnHand" class="form-label fw-bold">Qty On Hand:</label>
+                                        <input type="number" class="form-control" id="qtyOnHand" placeholder="100">
+                                    </div>
+                                    <div class="col">
+                                        <label for="price" class="form-label fw-bold">Price:</label>
+                                        <input type="text" class="form-control" id="price" placeholder="2000">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <label for="oQty" class="form-label fw-bold">Order Quantity:</label>
+                                        <input type="number" class="form-control" id="oQty" placeholder="1">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-1">
+                                    <button type="button" class="btn btn-primary">ADD </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--___________End Item_________________________-->
+
+                <!--___________purchase_________________________-->
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <p class="h2 d-inline">
+                                        Total :
+                                    </p>
+                                    <p class="h2 d-inline">
+                                        2000 LKR
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <p class="h2 d-inline">
+                                        SubTotal :
+                                    </p>
+                                    <p class="h2 d-inline">
+                                        1800 LKR
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+
+                                <div class="col">
+                                    <label for="cash" class="form-label fw-bold">Cash:</label>
+                                    <input type="text" class="form-control" id="cash" placeholder="5000">
+                                </div>
+                                <div class="col">
+                                    <label for="dis" class="form-label fw-bold">Discount:</label>
+                                    <input type="number" class="form-control" id="dis" placeholder="10">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+
+                                <div class="col">
+                                    <label for="cash" class="form-label fw-bold">Balance:</label>
+                                    <input type="text" class="form-control" id="cash" placeholder="3200">
+                                </div>
+                            </div>
+                            <div class="row mt-3 mb-1">
+                                <button type="button" class="btn btn-success">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--_____________End purchase_________________________-->
+
+                <!--___________table_________________________-->
+                <section class="container-fluid">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="" style="background-color: black;">
+                                <tr class="text-white" >
+                                    <th >Item ID</th>
+                                    <th> Name</th>
+                                    <th>Price</th>
+                                    <th>Qty</th>
+                                    <th>Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>I001</th>
+                                    <td>Apple i7</td>
+                                    <td>50,000</td>
+                                    <td>1</td>
+                                    <td>50,000</td>
+                                </tr>
+                                <tr>
+                                    <th>I002</th>
+                                    <td>Apple i7+</td>
+                                    <td>70,000</td>
+                                    <td>1</td>
+                                    <td>70,000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!--___________End Table_________________________-->
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+
 </body>
 </html>
