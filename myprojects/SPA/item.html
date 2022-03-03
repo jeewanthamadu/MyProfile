@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <link rel="stylesheet" href="assest/boostrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<!--------------------nav BAR-------------------->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #c8d6e5;">
+        <div class="container-fluid">
+            <a class="navbar-brand" >
+                <img src="assest/images/pos-logo.png" alt="Logo" width="184.3125" height="48.1875">
+            </a>
+            <ul class="nav nav-pills text-white">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="order.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="item.html">Items</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Other</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">##</a></li>
+                        <li><a class="dropdown-item" href="#">###</a></li>
+
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">######</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!--        <ul class="navbar-nav">-->
+                <!--          <li class="nav-item">-->
+                <!--            <a class="nav-link" href="customer.html">Customer</a>-->
+                <!--          </li>-->
+                <!--          <li class="nav-item">-->
+                <!--            <a class="nav-link" aria-current="page" href="item.html">Item</a>-->
+                <!--          </li>-->
+                <!--          <li class="nav-item">-->
+                <!--            <a class="nav-link active" href="order.html">Order</a>-->
+                <!--          </li>-->
+                <!--        </ul>-->
+            </div>
+        </div>
+    </nav>
+    <script crossorigin="anonymous"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</header>
+
+
+<main class="container-fluid">
+
+
+    <div class="rounded-3 p-3" style="background-color: #c8d6e5; margin-top: 30px;">
+        <h1 class="text-center mb-3"><i class="bi bi-box-seam m-2"></i>ITEM MANAGE</h1>
+
+        <div class="row g-3 align-items-center pb-3 justify-content-between">
+            <div class="col-12 col-md-6 col-xl-5">
+                <div class="input-group mb-3" style="height: 10px;">
+                    <input type="text" class="form-control" placeholder="Search Item"
+                           aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-dark" type="button" id="button-addon2"><i
+                            class="bi bi-search m-2"></i>Search</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+                        data-bs-target="#addItem"><i class="bi bi-bag-plus m-2"></i>ADD Item</button>
+                <button type="button" class="btn btn-danger mt-2"><i class="bi bi-backspace m-2"></i>Clear</button>
+            </div>
+        </div>
+        <hr>
+
+        <div class="modal fade" id="addItem" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-black text-white ">
+                        <h5 class="modal-title"  id="exampleModalToggleLabel"><i class="bi bi-bag-plus m-2"></i>ADD ITEM
+                        </h5>
+                        <!--  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="itemCode" class="form-label">Item ID</label>
+                                <input type="text" class="form-control" id="itemCode">
+                            </div>
+                            <div class="mb-3">
+                                <label for="itemName" class="form-label"> Name</label>
+                                <input type="text" class="form-control" id="itemName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="itemQty" class="form-label"> Qty</label>
+                                <input type="text" class="form-control" id="itemQty">
+                            </div>
+                            <div class="mb-3">
+                                <label for="itemPrice" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="itemPrice">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary mt-2">ADD ITEM</button>
+                        <button type="button" class="btn btn-danger mt-2" data-bs-dismiss="modal">Cancle</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="" style="background-color: black;">
+                        <tr class="text-white" >
+                            <th >Item ID</th>
+                            <th> Name</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>I001</th>
+                            <td>Apple i7</td>
+                            <td>50,000</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>I002</th>
+                            <td>Apple i7+</td>
+                            <td>70,000</td>
+                            <td>1</td>
+                        </tr><tr>
+                            <th>I001</th>
+                            <td>Apple Xs</td>
+                            <td>115,000</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>I001</th>
+                            <td>Apple i7</td>
+                            <td>50,000</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>I002</th>
+                            <td>Apple i7+</td>
+                            <td>70,000</td>
+                            <td>1</td>
+                        </tr><tr>
+                            <th>I001</th>
+                            <td>Apple Xs</td>
+                            <td>115,000</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>I001</th>
+                            <td>Apple i7</td>
+                            <td>50,000</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>I002</th>
+                            <td>Apple i7+</td>
+                            <td>70,000</td>
+                            <td>1</td>
+                        </tr><tr>
+                            <th>I001</th>
+                            <td>Apple Xs</td>
+                            <td>115,000</td>
+                            <td>1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </div>
+</main>
+</body>
+</html>
