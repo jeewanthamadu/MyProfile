@@ -15,6 +15,7 @@
             <a class="navbar-brand" >
                 <img src="assest/images/pos-logo.png" alt="Logo" width="184.3125" height="48.1875">
             </a>
+
             <ul class="nav nav-pills text-white">
                <!-- <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -23,6 +24,7 @@
                 <li class="nav-item">
                     <a class="nav-link "  id="navOrderPage">Orders</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link"  id="navCustomerPage">Customer</a>
                 </li>
@@ -30,6 +32,7 @@
                 <li class="nav-item">
                     <a class="nav-link "  id="navItemPage">Items</a>
                 </li>
+
                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Other</a>
                     <ul class="dropdown-menu">
@@ -65,6 +68,7 @@
 
 <main class="container-fluid">
 
+
     <section id="customerId">
         <div class="rounded-3 p-3" style="background-color: #c8d6e5; margin-top: 30px;">
             <div> <!--<img src="assest/images/customer.png" alt="Logo" width="184.3125" height="48.1875">-->
@@ -74,46 +78,50 @@
             <div class="row g-3 align-items-center pb-3 justify-content-between">
                 <div class="col-12 col-md-6 col-xl-5">
                     <div class="input-group mb-3" style="height: 10px;">
-                        <input type="text" class="form-control" placeholder="Search Item"
+                        <input type="text" class="form-control" placeholder="Search Customer"
                                aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-dark" type="button" id="button-addon2"><i
+                        <button class="btn btn-dark" type="button" id="button-addon"><i
                                 class="bi bi-search m-2"></i>Search</button>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+              <!--  <div class="col-12 col-md-5 col-lg-4 col-xl-3">
                     <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
-                            data-bs-target="#addItem"><i class="bi bi-bag-plus m-2"></i>ADD NEW CUSTOMER</button>
+                            data-bs-target="#addCustomer"><i class="bi bi-bag-plus m-2"></i>ADD NEW CUSTOMER</button>
                     <button type="button" class="btn btn-danger mt-2"><i class="bi bi-backspace m-2"></i>Clear</button>
                 </div>
-            </div>
+            </div>-->
+                <br>
+                <br>
+                <br>
+                <br>
             <hr>
 
             <!--    ______________Add new_____________________-->
-            <div class="modal fade" id="addItem" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <!--<div class="modal fade" id="addCustomer" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header bg-black text-white ">
-                            <h5 class="modal-title"  id="exampleModalToggleLabel"><i class="bi bi-bag-plus m-2"></i>ADD NEW CUSTOMER
+                            <h5 class="modal-title"  id="CexampleModalToggleLabel"><i class="bi bi-bag-plus m-2"></i>ADD NEW CUSTOMER
                             </h5>
 
                         </div>
                         <div class="modal-body">
                             <form>
                                 <div class="mb-3">
-                                    <label for="itemCode" class="form-label">Customer ID</label>
-                                    <input type="text" class="form-control" id="itemCode">
+                                    <label for="customerCode" class="form-label">Customer ID</label>
+                                    <input type="text" class="form-control" id="customerCode">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="itemName" class="form-label">Customer Name</label>
-                                    <input type="text" class="form-control" id="itemName">
+                                    <label for="customerName" class="form-label">Customer Name</label>
+                                    <input type="text" class="form-control" id="customerName">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="itemQty" class="form-label">Customer Age</label>
-                                    <input type="text" class="form-control" id="itemQty">
+                                    <label for="customerQty" class="form-label">Customer Age</label>
+                                    <input type="text" class="form-control" id="customerQty">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="itemPrice" class="form-label">Customer TELE Number</label>
-                                    <input type="text" class="form-control" id="itemPrice">
+                                    <label for="customerPrice" class="form-label">Customer TELE Number</label>
+                                    <input type="text" class="form-control" id="customerPrice">
                                 </div>
                             </form>
                         </div>
@@ -124,8 +132,41 @@
                         </div>
                     </div>
                 </div>
+            </div>-->
+
+
+
+            <!--    ______________labels_____________________-->
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label class="form-label" for="txtCusID">Customer ID</label>
+                    <input class="form-control" id="txtCusID" placeholder="Customer ID" type="text">
+                </div>
+                <div class="mb-3 col-6">
+                    <label class="form-label" for="txtCusName">Customer Name</label>
+                    <input class="form-control" id="txtCusName" placeholder="Customer Name" type="text">
+                </div>
+                <div class="mb-3 col-6">
+                    <label class="form-label" for="txtCusAddress">Customer Address</label>
+                    <input class="form-control" id="txtCusAddress" placeholder="Customer Address" type="text">
+                </div>
+                <div class="mb-3 col-6">
+                    <label class="form-label" for="txtCusSalary">Salary</label>
+                    <input class="form-control" id="txtCusSalary" placeholder="Customer Salary" type="text">
+                </div>
             </div>
 
+            <br>
+
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <button type="button" class="btn btn-primary mt-2">ADD NEW CUSTOMER</button>
+                <button type="button" class="btn btn-warning mt-2">UPDATE</button>
+                <button type="button" class="btn btn-danger mt-2">DELETE</button>
+                <button type="button" class="btn btn-dark mt-2">CLEAR</button>
+            </div>
+
+            <br>
+            <br>
 
             <section class="container-fluid">
                 <div class="row">
@@ -201,21 +242,50 @@
                                 class="bi bi-search m-2"></i>Search</button>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <!--<div class="col-12 col-md-5 col-lg-4 col-xl-3">
                     <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
-                            data-bs-target="#addItem"><i class="bi bi-bag-plus m-2"></i>ADD Item</button>
+                            data-bs-target="#addItem1"><i class="bi bi-bag-plus m-2"></i>ADD NEW ITEM</button>
                     <button type="button" class="btn btn-danger mt-2"><i class="bi bi-backspace m-2"></i>Clear</button>
-                </div>
+                </div>-->
             </div>
             <hr>
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label class="form-label" for="txtItemID">ITEM ID</label>
+                    <input class="form-control" id="txtItemID" placeholder="ITEM ID" type="text">
+                </div>
+                <div class="mb-3 col-6">
+                    <label class="form-label" for="txtItemName">ITEM Name</label>
+                    <input class="form-control" id="txtItemName" placeholder="ITEM Name" type="text">
+                </div>
+                <div class="mb-3 col-6">
+                    <label class="form-label" for="txtItemQty">ITEM QTY</label>
+                    <input class="form-control" id="txtItemQty" placeholder="ITEM Qty" type="text">
+                </div>
+                <div class="mb-3 col-6">
+                    <label class="form-label" for="txtItemPrice">PRICE</label>
+                    <input class="form-control" id="txtItemPrice" placeholder="ITEM Price" type="text">
+                </div>
+            </div>
 
-            <div class="modal fade" id="addItem" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <br>
+
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <button type="button" class="btn btn-primary mt-2">ADD NEW Item</button>
+                <button type="button" class="btn btn-warning mt-2">UPDATE</button>
+                <button type="button" class="btn btn-danger mt-2">DELETE</button>
+                <button type="button" class="btn btn-dark mt-2">CLEAR</button>
+            </div>
+
+            <br>
+            <br>
+            <!--<div class="modal fade" id="addItem1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header bg-black text-white ">
                             <h5 class="modal-title"  id="exampleModalToggleLabel"><i class="bi bi-bag-plus m-2"></i>ADD ITEM
                             </h5>
-                            <!--  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                            &lt;!&ndash;  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>&ndash;&gt;
                         </div>
                         <div class="modal-body">
                             <form>
@@ -244,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
 
             <section>
@@ -343,7 +413,7 @@
                                 <div class="row mt-3">
                                     <div class="col">
                                         <label for="idCmb" class="form-label fw-bold">Customer ID:</label>
-                                        <select class="form-select" id="idCmb">
+                                        <select class="form-select" id="oidCmb">
                                             <option selected>C001</option>
                                             <option value="1">C001</option>
                                             <option value="2">C002</option>
@@ -392,7 +462,7 @@
                                     </div>
                                     <div class="col">
                                         <label for="itemName" class="form-label fw-bold">Item Name:</label>
-                                        <input type="text" class="form-control" id="itemName" placeholder="Mouse">
+                                        <input type="text" class="form-control" id="oitemName" placeholder="Mouse">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -450,8 +520,8 @@
                             <div class="row mt-3">
 
                                 <div class="col">
-                                    <label for="cash" class="form-label fw-bold">Cash:</label>
-                                    <input type="text" class="form-control" id="cash" placeholder="5000">
+                                    <label for="ocash" class="form-label fw-bold">Cash:</label>
+                                    <input type="text" class="form-control" id="ocash" placeholder="5000">
                                 </div>
                                 <div class="col">
                                     <label for="dis" class="form-label fw-bold">Discount:</label>
@@ -515,11 +585,9 @@
         </div>
     </section>
 
+
 </main>
+
 <script src="assest/js/script.js"></script>
-
-
-
-
 </body>
 </html>
