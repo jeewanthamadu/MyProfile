@@ -77,6 +77,31 @@ $("#txtCusAddress").keydown(function (event) {
 });
 
 
+/*_________Customer Search bar___________*/
+$("#btnCusSearch").click(function (){
+    var searchId = $("#txtCusSearch").val();
+    var response = searchCustomer(searchId);
+    if (response){
+        $("#txtCusID").val(response.id);
+        $("#txtCusName").val(response.name);
+        $("#txtCusAddress").val(response.address);
+        $("#txtCusSalary").val(response.salary);
+    }else {
+        alert("Invalid customer Search");
+        clearFields();
+    }
+});
+function searchCustomer (id){
+    for (let i=0;i<customerDB.length;i++){
+        if (customerDB[i].id==id){
+            return customerDB[i];
+        }
+    }
+}
+
+
+
+
 
 
 
@@ -139,4 +164,27 @@ function loadTableItemData (){
 /*_________clear Item text field___________*/
 function clearItemFields (){
     $("#txtItemID,#txtItemName,#txtItemQty,#txtItemPrice").val("");
+}
+
+
+/*_________Item Search bar___________*/
+$("#btnItemSearch").click(function (){
+    var searchId = $("#txtItemSearch").val();
+    var response = searchItem(searchId);
+    if (response){
+        $("#txtItemID").val(response.id);
+        $("#txtItemName").val(response.name);
+        $("#txtItemQty").val(response.qty);
+        $("#txtItemPrice").val(response.price);
+    }else {
+        alert("Invalid customer Search");
+        clearFields();
+    }
+});
+function searchItem (id){
+    for (let i=0;i<itemDB.length;i++){
+        if (itemDB[i].id==id){
+            return itemDB[i];
+        }
+    }
 }
