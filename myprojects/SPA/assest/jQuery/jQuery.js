@@ -15,7 +15,32 @@ $("#btnCusAdd").click(function (){
         salary:customerSalary
     }
     customerDB.push(customerOB);
+    clearFields()
     loadTableCusData();
+
+
+    /*_________click customer Table ___________*/
+    $("#customerTableBody > tr").click(function (){
+        let customerId = $(this).children(":eq(0)").text();
+        let customerName = $(this).children(":eq(1)").text();
+        let customerAddress = $(this).children(":eq(2)").text();
+        let customerSalary = $(this).children(":eq(3)").text();
+
+        /*_________set data for text fields__________*/
+        $("#txtCusID").val(customerId);
+        $("#txtCusName").val(customerName);
+        $("#txtCusAddress").val(customerAddress);
+        $("#txtCusSalary").val(customerSalary);
+
+    });
+
+
+});
+
+
+
+$("#btnCusClearField").click(function (){
+    clearFields();
 });
 
 /*_________customer Table Load___________*/
@@ -26,3 +51,10 @@ function loadTableCusData (){
         $("#customerTableBody").append(raw);
     }
 }
+
+/*_________clear text field___________*/
+function clearFields (){
+    $("#txtCusID,#txtCusName,#txtCusAddress,#txtCusSalary").val("");
+}
+
+
