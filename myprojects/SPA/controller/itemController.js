@@ -66,6 +66,22 @@ $("#btnItemUpdate").click(function (){
 });
 
 
+/*_________Delete Item___________*/
+function deleteItem (){
+    $("#btnItemDelete").click(function (){
+        let getClickItemData=$("#txtItemID").val();
+        for (let i=0;i<itemDB.length;i++){
+            if (itemDB[i].getItemID()==getClickItemData){
+                itemDB.splice(i, 1);
+            }
+        }
+        clearItemFields();
+        loadTableItemData();
+
+    });
+}
+
+
 /*_________clear button___________*/
 $("#btnItemClear").click(function (){
     clearItemFields();
@@ -79,6 +95,7 @@ function loadTableItemData (){
         let raw = `<tr><td>${i.getItemID()}</td><td>${i.getItemName()}</td><td>${i.getItemQty()}</td><td>${i.getItemPrice()}</td></tr>`
         $("#tblItem").append(raw);
         bindItem();
+        deleteItem();
 
     }
 }
