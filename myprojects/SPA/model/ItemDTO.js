@@ -17,14 +17,12 @@ this.setItemID=function (id){
     this.setItemName=function (name){
         itemName=name;
     }
-
     this.getItemQty=function (){
         return itemQty;
     }
     this.setItemQty=function (qty){
         itemQty=qty;
     }
-
     this.getItemPrice=function (){
         return itemPrice;
     }

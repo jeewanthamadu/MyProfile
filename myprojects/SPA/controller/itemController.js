@@ -9,18 +9,27 @@ $("#btnItemAdd").click(function (){
     let itemQty = $("#txtItemQty").val();
     let itemPrice = $("#txtItemPrice").val();
 
-    var itemOB ={
+    /*var itemOB ={
         id:itemId,
         name:itemName,
         qty:itemQty,
         price:itemPrice
-    }
+    }*/
+
+    var itemOB=new ItemDTO(itemId,itemName,itemQty,itemPrice);
+
     itemDB.push(itemOB);
     clearItemFields();
     loadTableItemData();
 
 
 
+
+
+});
+
+
+function bindItem (){
     /*_________click Item Table ___________*/
     $("#tblItem > tr").click(function (){
         let itemId = $(this).children(":eq(0)").text();
@@ -36,9 +45,28 @@ $("#btnItemAdd").click(function (){
 
     });
 
+};
 
+/*_________Update Customer___________*/
+$("#btnItemUpdate").click(function (){
+    let itemId = $("#txtItemID").val();
+    let itemName = $("#txtItemName").val();
+    let itemQty = $("#txtItemQty").val();
+    let itemPrice = $("#txtItemPrice").val();
+
+    for (var i=0;i<itemDB.length;i++){
+        if ( itemDB[i].getItemID()==itemId){
+        itemDB[i].setItemName(itemName);
+        itemDB[i].setItemQty(itemQty);
+        itemDB[i].setItemPrice(itemPrice);
+        }
+    }
+    loadTableItemData();
+    clearItemFields();
 });
 
+
+/*_________clear button___________*/
 $("#btnItemClear").click(function (){
     clearItemFields();
 });
@@ -48,8 +76,10 @@ $("#btnItemClear").click(function (){
 function loadTableItemData (){
     $("#tblItem").empty();
     for (var i of itemDB){
-        let raw = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.qty}</td><td>${i.price}</td></tr>`
+        let raw = `<tr><td>${i.getItemID()}</td><td>${i.getItemName()}</td><td>${i.getItemQty()}</td><td>${i.getItemPrice()}</td></tr>`
         $("#tblItem").append(raw);
+        bindItem();
+
     }
 }
 /*_________clear Item text field___________*/
@@ -63,10 +93,10 @@ $("#btnItemSearch").click(function (){
     var searchId = $("#txtItemSearch").val();
     var response = searchItem(searchId);
     if (response){
-        $("#txtItemID").val(response.id);
-        $("#txtItemName").val(response.name);
-        $("#txtItemQty").val(response.qty);
-        $("#txtItemPrice").val(response.price);
+        $("#txtItemID").val(response.getItemID());
+        $("#txtItemName").val(response.getItemName());
+        $("#txtItemQty").val(response.getItemQty());
+        $("#txtItemPrice").val(response.getItemPrice());
     }else {
         alert("Invalid customer Search");
         clearFields();
@@ -74,7 +104,7 @@ $("#btnItemSearch").click(function (){
 });
 function searchItem (id){
     for (let i=0;i<itemDB.length;i++){
-        if (itemDB[i].id==id){
+        if (itemDB[i].getItemID()==id){
             return itemDB[i];
         }
     }
