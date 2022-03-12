@@ -23,6 +23,7 @@ $("#btnCusAdd").click(function (){
     clearFields();
     loadTableCusData();
     generateId();
+    loadAllCustomerIds();
 
 });
 

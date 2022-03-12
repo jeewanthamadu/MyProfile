@@ -26,6 +26,7 @@ $("#btnItemAdd").click(function (){
     clearItemFields();
     loadTableItemData();
     generateItemId();
+    loadAllItemIds();
 });
 
 
