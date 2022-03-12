@@ -1,14 +1,14 @@
 
 
 generateOrderId();
+setDate();
 
-/////////////-load customer and item ids /////////////////////////////////////
 
+/*_________load customer and item ids___________*/
 $("#orderCusIdCmb").change(function (e){
     let selectedCustomerId =$('#orderCusIdCmb').find(":selected").text();
     selectedCustomer(selectedCustomerId);
 });
-
 
 $("#itemIdCmb").change(function (e){
     let selectedItemId =$('#itemIdCmb').find(":selected").text();
@@ -40,8 +40,7 @@ function generateOrderId() {
 }
 
 
-
-/* load customer ids to cmb (customer)*/
+/*_________load customer ids to cmb ___________*/
 function loadAllCustomerIds() {
     $("#orderCusIdCmb").empty();
 
@@ -55,7 +54,7 @@ function loadAllCustomerIds() {
     }
 }
 
-/* load item ids to cmb (item)*/
+/* __________________________load item ids to cmb ______________________*/
 function loadAllItemIds() {
     $("#itemIdCmb").empty();
 
@@ -68,7 +67,7 @@ function loadAllItemIds() {
     }
 }
 
-/*load item data to text fields*/
+/*__________________load item data to text fields___________________*/
 function selectedItem(ItemId){
     for (const i in itemDB){
         if (itemDB[i].getItemID()==ItemId) {
@@ -80,7 +79,7 @@ function selectedItem(ItemId){
     }
 }
 
-/*load customer data to text fields*/
+/*_________________load customer data to text fields________________*/
 function selectedCustomer(CustomerId){
     for (const i in customerDB){
         if (customerDB[i].getCustomerID()==CustomerId) {
@@ -90,4 +89,15 @@ function selectedCustomer(CustomerId){
             $("#txtAddress").val(element.getCustomerAddress());
         }
     }
+
+
+}
+
+/*__________set Date____________*/
+function setDate() {
+    let d = new Date();
+    let dd = d.toISOString().split("T")[0].split("-");
+    $("#txtOrderDate").val(dd[0]+"-"+dd[1]+"-"+dd[2]);
+    $("#txtOrderDate").text(dd[0]+"-"+dd[1]+"-"+dd[2]);
+
 }
