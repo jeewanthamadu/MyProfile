@@ -1,4 +1,8 @@
-//////////////-load customer and item ids /////////////////////////////////////
+
+
+generateOrderId();
+
+/////////////-load customer and item ids /////////////////////////////////////
 
 $("#orderCusIdCmb").change(function (e){
     let selectedCustomerId =$('#orderCusIdCmb').find(":selected").text();
@@ -10,6 +14,32 @@ $("#itemIdCmb").change(function (e){
     let selectedItemId =$('#itemIdCmb').find(":selected").text();
     selectedItem(selectedItemId);
 });
+
+
+/*_________Auto Generate Order ID___________*/
+function generateOrderId() {
+    let index = orderDB.length - 1;
+    let id;
+    let temp;
+    if (index != -1) {
+        id = orderDB[orderDB.length - 1].getOrderID();
+        temp = id.split("-")[1];
+        temp++;
+    }
+
+    if (index == -1) {
+        $("#txtOrderId").val("O00-001");
+    } else if (temp <= 9) {
+        $("#txtOrderId").val("O00-00" + temp);
+    } else if (temp <= 99) {
+        $("#txtOrderId").val("O00-0" + temp);
+    } else {
+        $("#txtOrderId").val("O00-" + temp);
+    }
+
+}
+
+
 
 /* load customer ids to cmb (customer)*/
 function loadAllCustomerIds() {
