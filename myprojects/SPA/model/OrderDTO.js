@@ -1,10 +1,11 @@
 
-function OrderDTO (oId,cId,date,discount,total) {
+function OrderDTO (oId,cId,date,discount,total,subTotal) {
     var orderID = oId;
     var orderCusID = cId;
     var orderDate = date;
     var orderdiscount = discount;
     var ordertotal = total;
+    var orderSubTotal = subTotal;
 
     this.getOrderID = function () {
         return orderID;
@@ -39,6 +40,14 @@ function OrderDTO (oId,cId,date,discount,total) {
     }
     this.setOrderTotal = function (total) {
         ordertotal = total;
+    }
+
+    this.setSubTotal = function(subTotal){
+        orderSubTotal = subTotal;
+    }
+
+    this.getSubTotal = function(){
+        return orderSubTotal;
     }
 
 

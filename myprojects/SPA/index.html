@@ -180,44 +180,7 @@
                             </tr>
                             </thead>
                             <tbody id="customerTableBody">
-                           <!-- <tr>
-                                <th>C001</th>
-                                <td>jeewantha</td>
-                                <td>22</td>
-                                <td>0775588963</td>
-                            </tr>-->
-                            <!--<tr>
-                                <th>C002</th>
-                                <td>madushan</td>
-                                <td>21</td>
-                                <td>077987452</td>
 
-                            </tr><tr>
-                                <th>C003</th>
-                                <td>kasun</td>
-                                <td>24</td>
-                                <td>0768596569</td>
-                            </tr>
-                            <tr>
-                                <th>C004</th>
-                                <td>yasiru</td>
-                                <td>25</td>
-                                <td>0775588963</td>
-
-                            </tr>
-                            <tr>
-                                <th>C005</th>
-                                <td>madu</td>
-                                <td>28</td>
-                                <td>077987452</td>
-
-                            </tr><tr>
-                                <th>C006</th>
-                                <td>sumudu</td>
-                                <td>29</td>
-                                <td>0768456569</td>
-                            </tr>
--->
                             </tbody>
                         </table>
                     </div>
@@ -268,7 +231,7 @@
             <br>
 
             <div class="col-12 col-md-5 col-lg-4 col-xl-3">
-                <button type="button" id="btnItemAdd" class="btn btn-primary mt-2">ADD NEW Item</button>
+                <button type="button" id="btnItemAdd" class="btn btn-primary mt-2">ADD NEW ITEM</button>
                 <button type="button" id="btnItemUpdate" class="btn btn-warning mt-2">UPDATE</button>
                 <button type="button" id="btnItemDelete" class="btn btn-danger mt-2">DELETE</button>
                 <button type="button" id="btnItemClear" class="btn btn-dark mt-2">CLEAR</button>
@@ -407,7 +370,6 @@
                                     </div>
                                 </div>
                                 <div class="row mt-3">
-
                                     <div class="col">
                                         <label for="txtQtyOnHand" class="form-label fw-bold">Qty On Hand:</label>
                                         <input type="number" class="form-control" id="txtQtyOnHand" >
@@ -433,6 +395,8 @@
 
                 <!--___________End Item_________________________-->
 
+
+
                 <!--___________purchase_________________________-->
 
                 <div class="modal-dialog">
@@ -451,7 +415,7 @@
                             <div class="row mt-3">
                                 <div class="col">
                                     <p class="h2 d-inline">
-                                        SubTotal :
+                                        FUll Total :
                                     </p>
                                     <p id="lblFullTotal" class="h2 d-inline">
 
@@ -467,13 +431,14 @@
                                 <div class="col">
                                     <label for="dis" class="form-label fw-bold">Discount:</label>
                                     <input type="number" class="form-control" id="dis" >
+
                                 </div>
                             </div>
                             <div class="row mt-3">
 
                                 <div class="col">
-                                    <label for="cash" class="form-label fw-bold">Balance:</label>
-                                    <input type="text" class="form-control" id="cash" >
+                                    <label for="balance" class="form-label fw-bold">Balance:</label>
+                                    <input type="text" class="form-control" id="balance" >
                                 </div>
                             </div>
                             <div class="row mt-3 mb-1">
@@ -533,6 +498,7 @@
 <script src="controller/customerController.js"></script>
 <script src="controller/itemController.js"></script>
 <script src="controller/orderController.js"></script>
+<script src="model/OrderDetailDTO.js"></script>
 <script src="model/OrderDTO.js"></script>
 <script src="model/CustomerDTO.js"></script>
 <script src="model/ItemDTO.js"></script>

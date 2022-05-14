@@ -1,7 +1,48 @@
 /*_________________customer part______________________*/
 generateId();
 
+/* ____________________Validation - Start */
+$('#error1').css({ "display": "none" });
+$('#error2').css({ "display": "none" });
+$('#error3').css({ "display": "none" });
+$('#error4').css({ "display": "none" });
 
+$('#error01').css({ "display": "none" });
+$('#error02').css({ "display": "none" });
+$('#error03').css({ "display": "none" });
+$('#error04').css({ "display": "none" });
+
+var RegExCusName = /^[A-z ]{5,20}$/;
+var RegExCusAddress = /^[0-9/A-z. ,]{7,}$/;
+var RegExCusSalary = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+
+validation(RegExCusName, '#txtCusName', '#error2', '#txtCusAddress', '#btnCusAdd');
+validation(RegExCusAddress, '#txtCusAddress', '#error3', '#txtCusSalary', '#btnCusAdd');
+validation(RegExCusSalary, '#txtCusSalary', '#error4', "#btnCusAdd", '#btnCusAdd');
+
+validation(RegExCusName, '#txtCusName', '#error02', '#txtCusAddress', '#btnCusUpdate');
+validation(RegExCusAddress, '#txtCusAddress', '#error03', '#txtCusSalary', '#btnCusUpdate');
+validation(RegExCusSalary, '#txtCusSalary', '#error04', '#btnCusUpdate', '#btnCusUpdate');
+
+
+// Customer Validation Function - Start
+function validation(regEx, id, error, nextId, btn) {
+    $(id).keyup(function (event) {
+        let input = $(id).val();
+        if (regEx.test(input)) {
+            $(id).css({ 'border': '2px solid green', 'background-color': '#fff' });
+            $(error).css({ "display": "none" });
+            if (event.key == "Enter") {
+                $(btn).prop('disabled', false);
+                $(nextId).focus();
+            }
+        } else {
+            $(id).css({ 'border': '2px solid red', 'background-color': '#ffe6e6' });
+            $(error).css({ "color": "red", "display": "block" });
+            $(btn).prop('disabled', true);
+        }
+    });
+}
 
 /*_________customer save___________*/
 $("#btnCusAdd").click(function (){
@@ -9,13 +50,6 @@ $("#btnCusAdd").click(function (){
     let customerName = $("#txtCusName").val();
     let customerAddress = $("#txtCusAddress").val();
     let customerSalary = $("#txtCusSalary").val();
-
-    /*var customerOB ={
-        id:customerId,
-        name:customerName,
-        address:customerAddress,
-        salary:customerSalary
-    }*/
 
     var customerOB=new CustomerDTO(customerId,customerName,customerAddress,customerSalary);
 
