@@ -1117,7 +1117,7 @@ h1#contact:after {
 /*_________responsive part______iphone_7______*/
 
 
-@media all and (max-width: 375px){
+@media all and (max-width: 375px) {
     header > nav {
         font-size: 9px;
         font-weight: 700;
